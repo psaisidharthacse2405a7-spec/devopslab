@@ -23,6 +23,6 @@ function validateForm(){
         alert("Please enter your address.");
         return false;
     }
-
+    alert("Order placed successfully!");
     return true;
 }
