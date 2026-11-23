@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>My Web Page</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <h1>pizza order form</h1>
+        <form onsubmit="return validateForm()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required><br><br>
+
+            <label for="size">Size:</label>
+            <select id="size" name="size" required>
+                <option value="">Select size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select><br><br>
+
+            <label for="veg or non-veg">Veg or Non-Veg:</label>
+            <select id="veg or non-veg" name="veg or non-veg" required>
+                <option value="">Select option</option>
+                <option value="veg">Veg</option>
+                <option value="non-veg">Non-Veg</option>
+            </select><br><br>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br><br>
+
+            <button type="submit" value="Submit Order">Submit Order</button>
+        </form>
+        <script src="validate.js"></script>
+    </body>
+</html>
